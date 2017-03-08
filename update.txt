@@ -1,0 +1,2 @@
+﻿<?xml version="1.0"?>
+<update ver="2.0" msg="新版本xxxxxx" url="https://github.com/bigsinger/smartrun"/>
