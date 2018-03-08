@@ -34,11 +34,11 @@
     <q>windows64位下系统文件提示找不到wow64</q>
 	<a>
 	    PVOID OldValue = NULL;
-        Wow64DisableWow64FsRedirection(&OldValue);
+        Wow64DisableWow64FsRedirection(&amp;OldValue);
         if ( GetFileAttributes(stShortcut.strTarget)!=-1 ) {
-            ShellExecute(NULL, "open", stShortcut.strTarget, stShortcut.strParams, stShortcut.strStartPath, SW_NORMAL);
+            ShellExecute(NULL, &quot;open&quot;, stShortcut.strTarget, stShortcut.strParams, stShortcut.strStartPath, SW_NORMAL);
         }else{
-            AfxMessageBox("目标文件不存在：\n" + stShortcut.strTarget);
+            AfxMessageBox(&quot;目标文件不存在：\n&quot; + stShortcut.strTarget);
         }
         Wow64EnableWow64FsRedirection(TRUE);
 	</a>
@@ -64,8 +64,6 @@
     if not filepath:
         return None
     lsPath = os.path.split(filepath)
-    # print(lsPath)
-    # print("lsPath[1] = %s" %lsPath[1])
     if lsPath[1]:
         return lsPath[0]
     lsPath = os.path.split(lsPath[0])
