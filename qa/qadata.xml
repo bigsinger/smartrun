@@ -31,8 +31,16 @@
 	<a>so只加固了自研的，以xx..so（挑选一个so）为例，用ida分析，其Exports函数全部为空。未加固前，所有 exports函数都是透明可见的。</a>
   </item>
   <item>
-    <q>为什么壳子检测出用的360加固？</q>
-	<a>不是360的， 360渠道上限制了只能上架360加固后的app, 为了使我们加固后app能在360上架，我们往asset下加了一个libjiagu.so, 文件大小为0， 让360应用市场认为是360加固，从而可以在360渠道上架
+    <q>windows64位下系统文件提示找不到wow64</q>
+	<a>
+	    PVOID OldValue = NULL;
+        Wow64DisableWow64FsRedirection(&OldValue);
+        if ( GetFileAttributes(stShortcut.strTarget)!=-1 ) {
+            ShellExecute(NULL, "open", stShortcut.strTarget, stShortcut.strParams, stShortcut.strStartPath, SW_NORMAL);
+        }else{
+            AfxMessageBox("目标文件不存在：\n" + stShortcut.strTarget);
+        }
+        Wow64EnableWow64FsRedirection(TRUE);
 	</a>
   </item>
   <item>
@@ -48,6 +56,85 @@
   <item>
     <q>签名命名行代码jarsigner</q>
 	<a>jarsigner -verify -verbose -certs [your_apk_path.apk]</a>
+  </item>
+  <item>
+    <q>Python获取父目录</q>
+	<a>
+	def getparent(filepath):
+    if not filepath:
+        return None
+    lsPath = os.path.split(filepath)
+    # print(lsPath)
+    # print("lsPath[1] = %s" %lsPath[1])
+    if lsPath[1]:
+        return lsPath[0]
+    lsPath = os.path.split(lsPath[0])
+    return lsPath[0]
+	</a>
+  </item>
+  <item>
+    <q>Python获取当前目录</q>
+	<a>
+	# 返回当前脚本的全路径，末尾不带\
+	# 在使用os.path.join函数时，后面的路径也不能以\开头，例如：
+	# os.path.join(getthispath(), 'tools\\tools.exe') ok
+	# os.path.join(getthispath(), '\\tools\\tools.exe') not ok
+	# 或者直接调用os.path.abspath(os.path.dirname(__file__))，例如在F:\osopen\studypython\Main.py中调用
+	# 则返回F:\osopen\studypython（末尾不带\）；若调用os.path.dirname(__file__)则返回F:/osopen/studypython（末尾不带\）
+	def getthispath():
+		path = sys.path[0]
+		#判断为脚本文件还是py2exe编译后的文件，如果是脚本文件，则返回的是脚本的目录，如果是py2exe编译后的文件，则返回的是编译后的文件路径
+		if os.path.isdir(path):
+			return path
+		elif os.path.isfile(path):
+			return os.path.split(path)[0]
+	</a>
+  </item>
+  <item>
+    <q>Python异常处理</q>
+	<a>
+	import traceback
+
+	try:
+    except:
+        print(traceback.format_exc())
+	</a>
+  </item>
+  <item>
+    <q></q>
+	<a></a>
+  </item>
+  <item>
+    <q></q>
+	<a></a>
+  </item>
+  <item>
+    <q></q>
+	<a></a>
+  </item>
+  <item>
+    <q></q>
+	<a></a>
+  </item>
+  <item>
+    <q></q>
+	<a></a>
+  </item>
+  <item>
+    <q></q>
+	<a></a>
+  </item>
+  <item>
+    <q></q>
+	<a></a>
+  </item>
+  <item>
+    <q></q>
+	<a></a>
+  </item>
+  <item>
+    <q></q>
+	<a></a>
   </item>
   <item>
     <q></q>
