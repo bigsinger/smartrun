@@ -46,8 +46,8 @@
 	<a>用于windows系统下的app加固，支持界面模式和命令行模式，下载地址：http://support.dun.163.com/android/api/#_6</a>
   </item>
   <item>
-    <q></q>
-	<a></a>
+    <q>签名命名行代码jarsigner</q>
+	<a>jarsigner -verify -verbose -certs [your_apk_path.apk]</a>
   </item>
   <item>
     <q></q>
