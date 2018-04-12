@@ -1,24 +1,23 @@
 ﻿<?xml version="1.0"?>
 <root>
   <item>
-    <q>加固后的apk安装失败?</q>
-	<a>是否用原先的签名重新签名了？如果重签了还失败，请告知你们使用的机型和安卓版本，我们复现排查。</a>
+    <q>adb启动app</q>
+	<a>adb shell am start -W com.example.test/com.example.test.MainActivity</a>
   </item>
   
   <item>
-    <q>为什么加固后可以通过dex反编译出源码？</q>
-	<a>反编译出来的是外壳的源码，原来的app代码是反编译不出来的</a>
+    <q>addr2line</q>
+	<a>D:\android\ndk\toolchains\arm-linux-androideabi-4.9\prebuilt\windows-x86_64\bin\arm-linux-androideabi-addr2line.exe -C -f -e F:\bigsinger\AndroidTestCase\trunk\app\src\obj\local\armeabi\libhooktest.so 0x001234</a>
   </item>
   
    <item>
-    <q>so库只留下了armeabi平台的，不会有兼容性问题吗?</q>
-	<a>之前apk有多个abi，但里面的so数量不一样，比如在arm64里，如果有一些so有arm64版本的，app会选择使用arm64下的so， 但是另一些没有，用到这些so时就会崩溃。
-如果只保留一个所有so都有的armeabi, 能够兼容其他所有平台，兼容性更好。
+    <q>path</q>
+	<a>System.AppDomain.CurrentDomain.BaseDirectory
 </a>
   </item>
     <item>
-    <q>加固后，对App有哪些影响？</q>
-	<a>加固对App的功能不产生任何影响，文件大小略微增加，对应用性能的影响可以忽略
+    <q>openurl</q>
+	<a>System.Diagnostics.Process.Start("url");
 	</a>
   </item>  
     <item>
