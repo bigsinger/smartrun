@@ -1,2 +1,2 @@
 ﻿<?xml version="1.0"?>
-<update ver="2.0" msg="新版本2.0" url="https://github.com/bigsinger/smartrun"/>
+<update ver="2.0" msg="新版本2.0" url="https://github.com/bigsinger/smartrun/tree/master/release"/>
