@@ -1,0 +1,3 @@
+﻿star=https://github.com/bigsinger/star
+path:open+copy=$documents|$temp|$system|$recent|$desktop|$history
+path=System.AppDomain.CurrentDomain.BaseDirectory
