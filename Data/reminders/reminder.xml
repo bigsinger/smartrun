@@ -1,0 +1,25 @@
+<?xml version="1.0"?>
+<root>
+  <item>
+    <type>d</type>
+    <enabled>true</enabled>
+    <hour>09</hour>
+    <min>00</min>
+    <name>早上好！开始新的一天</name>
+  </item>
+  <item>
+    <type>d</type>
+    <enabled>true</enabled>
+    <hour>12</hour>
+    <min>00</min>
+    <name>午餐时间，注意休息</name>
+  </item>
+  <item>
+    <type>w</type>
+    <enabled>true</enabled>
+    <week>5</week>
+    <hour>17</hour>
+    <min>30</min>
+    <name>周五啦，准备周末计划</name>
+  </item>
+</root>

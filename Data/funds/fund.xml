@@ -1,0 +1,10 @@
+<?xml version="1.0"?>
+<root>
+  <group name="宽基指数">
+    <item code="110003" name="易方达上证50" />
+    <item code="110020" name="易方达沪深300" />
+  </group>
+  <group name="行业主题">
+    <item code="001632" name="天弘食品饮料" />
+  </group>
+</root>

@@ -1,0 +1,7 @@
+group,tags,title,subtitle,content
+Python,""python, snippet"",Hello World,入门示例,print("Hello, World!")
+Python,""python, list"",列表推导式,语法糖,squares = [x**2 for x in range(10)]
+Git,""git, commit"",提交代码,Git操作,git add . && git commit -m "feat: add new feature"
+Git,""git, branch"",创建分支,Git操作,git checkout -b feature/xxx
+Shell,""shell, cmd"",查看目录内容,文件操作,dir /b
+Shell,""shell, cmd"",查找文件,文件操作,dir /s *.txt

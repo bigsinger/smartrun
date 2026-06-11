@@ -1,0 +1,29 @@
+<?xml version="1.0"?>
+<root>
+  <group name="系统工具">
+    <subgroup name="常用">
+      <item name="记事本" file="notepad" type="exe" />
+      <item name="计算器" file="calc" type="exe" />
+      <item name="画图" file="mspaint" type="exe" />
+    </subgroup>
+    <subgroup name="命令行">
+      <item name="命令提示符" file="cmd" type="exe" />
+      <item name="PowerShell" file="powershell" type="exe" />
+      <item name="任务管理器" file="taskmgr" type="exe" />
+    </subgroup>
+  </group>
+  <group name="开发工具">
+    <subgroup name="编辑">
+      <item name="VS Code" file="code" type="exe" />
+    </subgroup>
+    <subgroup name="文档">
+      <item name="Markdown参考" file="https://www.markdownguide.org/basic-syntax/" type="url" />
+    </subgroup>
+  </group>
+  <group name="网络工具">
+    <subgroup name="网站">
+      <item name="GitHub" file="https://github.com" type="url" />
+      <item name="Stack Overflow" file="https://stackoverflow.com" type="url" />
+    </subgroup>
+  </group>
+</root>
